@@ -1,0 +1,102 @@
+[debug] [2017-10-11T09:33:51.585Z] ----------------------------------------------------------------------
+[debug] [2017-10-11T09:33:51.589Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\macha\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-10-11T09:33:51.589Z] CLI Version:   3.13.1
+[debug] [2017-10-11T09:33:51.589Z] Platform:      win32
+[debug] [2017-10-11T09:33:51.589Z] Node Version:  v6.11.4
+[debug] [2017-10-11T09:33:51.590Z] Time:          Wed Oct 11 2017 05:33:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:33:51.590Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-11T09:33:51.606Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-11T09:33:51.607Z] > authorizing via signed-in user
+[debug] [2017-10-11T09:33:51.610Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/friendlychat-e5bc9  
+ Wed Oct 11 2017 05:33:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:33:52.280Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-11T09:33:52.284Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/friendlychat-e5bc9/tokens  
+ Wed Oct 11 2017 05:33:52 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:33:53.195Z] <<< HTTP RESPONSE 200
+[info] 2
+[info] 
+[info] === Deploying to 'friendlychat-e5bc9'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2017-10-11T09:33:53.920Z] > [functions] package.json contents: {
+  "name": "friendlychat-codelab",
+  "description": "Firebase SDK for Cloud Functions codelab",
+  "dependencies": {
+    "firebase-admin": "^4.1.1",
+    "firebase-functions": "^0.5.1"
+  }
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-10-11T09:33:53.937Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:33:53 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:33:53.940Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:33:53 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:33:56.050Z] <<< HTTP RESPONSE 200
+[warn] !  runtimeconfig: missing necessary APIs. Enabling now...
+[debug] [2017-10-11T09:33:56.060Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/friendlychat-e5bc9?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Wed Oct 11 2017 05:33:56 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:33:56.080Z] <<< HTTP RESPONSE 200
+[warn] !  functions: missing necessary APIs. Enabling now...
+[debug] [2017-10-11T09:33:56.088Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Wed Oct 11 2017 05:33:56 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:33:57.706Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-11T09:33:57.708Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-11T09:34:07.709Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:34:07 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:34:07.712Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:34:07 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:34:09.338Z] <<< HTTP RESPONSE 200
+[info] i  runtimeconfig: waiting for APIs to activate...
+[debug] [2017-10-11T09:34:09.351Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-11T09:34:19.351Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:34:19 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:34:19.364Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:34:19 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:34:20.026Z] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-10-11T09:34:20.039Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-11T09:34:30.041Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:34:30 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:34:30.877Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-11T09:34:40.884Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:34:40 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:34:41.586Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-11T09:34:51.591Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:34:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:34:52.626Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-11T09:35:02.635Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:35:02 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:35:03.635Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-11T09:35:13.652Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:35:13 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:35:14.641Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-11T09:35:24.647Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:35:24 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:35:25.981Z] <<< HTTP RESPONSE 200
+[info] i  functions: waiting for APIs to activate...
+[debug] [2017-10-11T09:35:35.990Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/friendlychat-e5bc9?view=CONSUMER_VIEW  
+ Wed Oct 11 2017 05:35:35 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:35:36.765Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2017-10-11T09:35:36.783Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/friendlychat-e5bc9  
+ Wed Oct 11 2017 05:35:36 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:35:36.790Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/friendlychat-e5bc9/apiKeys  
+ Wed Oct 11 2017 05:35:36 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:35:37.345Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-11T09:35:37.380Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2017-10-11T09:35:37.432Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/friendlychat-e5bc9/configs  
+ Wed Oct 11 2017 05:35:37 GMT-0400 (Eastern Daylight Time)
+[debug] [2017-10-11T09:35:38.038Z] <<< HTTP RESPONSE 200
+[info] i  hosting: preparing ./ directory for upload...
+[debug] [2017-10-11T09:35:42.079Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/friendlychat-e5bc9/uploads/-Kw9mWW48FBpmkmkvGIx?fileCount=2572&message=  
+ Wed Oct 11 2017 05:35:42 GMT-0400 (Eastern Daylight Time)
